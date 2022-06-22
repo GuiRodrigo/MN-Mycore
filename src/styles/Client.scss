@@ -1,0 +1,25 @@
+#textContent {
+  hgroup {
+    h3 {
+      margin: 15px 0;
+      text-align: initial;
+    }
+  }
+  div {
+    margin: 15px 0 22px;
+    li {
+      list-style: disc;
+      a {
+        color: #3ac3d5;
+      }
+    }
+    img {
+      padding: 1.5px;
+      width: 80%;
+      height: 80%;
+      border: 1px solid #919090;
+      margin: 16px 0 10px;
+      box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.466), 0 0;
+    }
+  }
+}
