@@ -224,8 +224,6 @@ import { FinancialBankInvoicesWin } from './pages/financeiro/FinancialBankInvoic
 import { FinancialBankWinToday } from './pages/financeiro/FinancialBankWinToday'
 import { FinancialBankOverdue } from './pages/financeiro/FinancialBankOverdue'
 import { FinancialBankLiquids } from './pages/financeiro/FinancialBankLiquids'
-
-import './styles/global.scss'
 import { FinancialBankSupportsPaid } from './pages/financeiro/FinancialBankSupportsPaid'
 import { FinancialBankGenerateMass } from './pages/financeiro/FinancialBankGenerateMass'
 import { FinancialBankDeleted } from './pages/financeiro/FinancialBankDeleted'
@@ -236,6 +234,8 @@ import { FinancialBankListInvoices } from './pages/financeiro/FinancialBankListI
 import { FinancialBankGenerateAll } from './pages/financeiro/FinancialBankGenerateAll'
 import { FinancialBankGenerateSelected } from './pages/financeiro/FinancialBankGenerateSelected'
 import { FinancialBankReturn } from './pages/financeiro/FinancialBankReturn'
+import { FinancialBankArchive } from './pages/financeiro/FinancialBankArchive'
+
 import { FinancialNFChooseRegister } from './pages/financeiro/FinancialNFChooseRegister'
 import { FinancialNFNotesIssued } from './pages/financeiro/FinancialNFNotesIssued'
 import { FinancialNFGenerateSelected } from './pages/financeiro/FinancialNFGenerateSelected'
@@ -243,13 +243,19 @@ import { FinancialNFGenerateAll } from './pages/financeiro/FinancialNFGenerateAl
 import { FinancialNFGenerateArchives } from './pages/financeiro/FinancialNFGenerateArchives'
 import { FinancialNFFiles } from './pages/financeiro/FinancialNFFiles'
 import { FinancialNFDebugLog } from './pages/financeiro/FinancialNFDebugLog'
+
 import { FinancialAccountsPay } from './pages/financeiro/FinancialAccountsPay'
 import { FinancialGerencianetInstallments } from './pages/financeiro/FinancialGerencianetInstallments'
 import { AccountsPaySupplier } from './pages/financeiro/Financial AccountsPaySupplier'
+
 import { FinancialGerencianetTransactions } from './pages/financeiro/FinancialGerencianetTransactions'
 import { FinancialGerencianetErrorTransactions } from './pages/financeiro/FinancialGerencianetErrorTransactions'
-import { FinancialBankArchive } from './pages/financeiro/FinancialBankArchive'
 import { DrawnetDrawNetworkConfiguration } from './pages/Drawnet/DrawnetDrawNetworkConfiguration'
+import { FinancialGerencianetDebugAnswer } from './pages/financeiro/FinancialGerencianetDebugAnswer'
+
+import './styles/global.scss'
+import { FinancialGerencianetPrintMass } from './pages/financeiro/FinancialGerencianetPrintMass'
+import { FinancialGerencianetSupportWithoutInvoice } from './pages/financeiro/FinancialGerencianetSupportWithoutInvoice'
 
 function App() {
   return (
@@ -517,6 +523,9 @@ function App() {
       <Route path="/financeiro/gerencianet/carnes-parcelas" exact component={FinancialGerencianetInstallments} />
       <Route path="/financeiro/gerencianet/transacoes" exact component={FinancialGerencianetTransactions} />
       <Route path="/financeiro/gerencianet/erro-transacoes" exact component={FinancialGerencianetErrorTransactions} />
+      <Route path="/financeiro/gerencianet/debug-respostas" exact component={FinancialGerencianetDebugAnswer} />
+      <Route path="/financeiro/gerencianet/impressao-massa" exact component={FinancialGerencianetPrintMass} />
+      <Route path="/financeiro/gerencianet/suporte-sem-fatura" exact component={FinancialGerencianetSupportWithoutInvoice} />
 
     </BrowserRouter>
   );

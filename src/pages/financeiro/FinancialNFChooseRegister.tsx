@@ -17,7 +17,6 @@ export function FinancialNFChooseRegister() {
                         <img src={NF21ChooseRecords} alt="NF 21 - Escolher Registros" />
                     </div>
 
-
                 </div>
             </div >
             <Footer />
