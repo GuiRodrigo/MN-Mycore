@@ -523,8 +523,8 @@ function App() {
       <Route path="/financeiro/gerencianet/carnes-parcelas" exact component={FinancialGerencianetInstallments} />
       <Route path="/financeiro/gerencianet/transacoes" exact component={FinancialGerencianetTransactions} />
       <Route path="/financeiro/gerencianet/erro-transacoes" exact component={FinancialGerencianetErrorTransactions} />
-      <Route path="/financeiro/gerencianet/debug-respostas" exact component={FinancialGerencianetDebugAnswer} />
-      <Route path="/financeiro/gerencianet/impressao-massa" exact component={FinancialGerencianetPrintMass} />
+      <Route path="/financeiro/gerencianet/debug-resposta" exact component={FinancialGerencianetDebugAnswer} />
+      <Route path="/financeiro/gerencianet/imprimir-massa" exact component={FinancialGerencianetPrintMass} />
       <Route path="/financeiro/gerencianet/suporte-sem-fatura" exact component={FinancialGerencianetSupportWithoutInvoice} />
 
     </BrowserRouter>
