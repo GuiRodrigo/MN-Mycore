@@ -2,7 +2,7 @@ import { Footer } from "../../components/footer";
 import { Menu } from "../../components/Menu";
 
 import FinancialWidePayInstallment from "./img/FinancialWidePayInstallments.png"
-import FinancialWidePayDeletInstallment from "./FinancialWidePayDeletInstallment.png"
+import FinancialWidePayDeletInstallment from "./img/FinancialWidePayDeletInstallment.png"
 import FinancialWidePayGenerateInvoiceMass from "./img/FinancialWidePayGenerateInvoiceMass.png"
 import FinancialWidePayExportToPDF from "./img/FinancialWidePayExportToPDF.png"
 import FinancialWidePayDocumentInPDF from "./img/FinancialWidePayDocumentInPDF.png"

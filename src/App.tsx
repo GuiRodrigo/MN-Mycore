@@ -256,6 +256,17 @@ import { FinancialGerencianetDebugAnswer } from './pages/financeiro/FinancialGer
 import './styles/global.scss'
 import { FinancialGerencianetPrintMass } from './pages/financeiro/FinancialGerencianetPrintMass'
 import { FinancialGerencianetSupportWithoutInvoice } from './pages/financeiro/FinancialGerencianetSupportWithoutInvoice'
+import { FinancialWidePayInstallments } from './pages/financeiro/FinancialWidePayInstallments'
+import { FinancialWidePayTransactions } from './pages/financeiro/FinancialWidePayTransactions'
+import { FinancialWidePayErrorTransactions } from './pages/financeiro/FinancialWidePayErrorTransactions'
+import { FinancialWidePayDebugAnswer } from './pages/financeiro/FinancialWidePayDebugAnswer'
+import { FinancialWidePaySuportWithoutInvoice } from './pages/financeiro/FinancialWidePaySuportWithoutInvoice'
+import { FinancialGalaxPayInstallments } from './pages/financeiro/FinancialGalaxPayInstallments'
+import { FinancialGalaxPayCarnet } from './pages/financeiro/FinancialGalaxPayCarnet'
+import { FinancialGalaxPayTransactions } from './pages/financeiro/FinancialGalaxPayTransactions'
+import { FinancialGalaxPayErrorTransactions } from './pages/financeiro/FinancialGalaxPayErrorTransactions'
+import { FinancialGalaxPayDebugAnswer } from './pages/financeiro/FinancialGalaxPayDebugAnswer'
+import { FinancialGalaxPayPrintMass } from './pages/financeiro/FinancialGalaxPayPrintMass'
 
 function App() {
   return (
@@ -526,6 +537,19 @@ function App() {
       <Route path="/financeiro/gerencianet/debug-resposta" exact component={FinancialGerencianetDebugAnswer} />
       <Route path="/financeiro/gerencianet/imprimir-massa" exact component={FinancialGerencianetPrintMass} />
       <Route path="/financeiro/gerencianet/suporte-sem-fatura" exact component={FinancialGerencianetSupportWithoutInvoice} />
+
+      <Route path="/financeiro/wide-pay/carnes-parcelas" exact component={FinancialWidePayInstallments} />
+      <Route path="/financeiro/wide-pay/transacoes" exact component={FinancialWidePayTransactions} />
+      <Route path="/financeiro/wide-pay/erro-transacoes" exact component={FinancialWidePayErrorTransactions} />
+      <Route path="/financeiro/wide-pay/debug-respostas" exact component={FinancialWidePayDebugAnswer} />
+      <Route path="/financeiro/wide-pay/suporte-sem-fatura" exact component={FinancialWidePaySuportWithoutInvoice} />
+
+      <Route path="/financeiro/galaxy-pay/parcelas" exact component={FinancialGalaxPayInstallments} />
+      <Route path="/financeiro/galaxy-pay/carnes" exact component={FinancialGalaxPayCarnet} />
+      <Route path="/financeiro/galaxy-pay/transacoes" exact component={FinancialGalaxPayTransactions} />
+      <Route path="/financeiro/galaxy-pay/erro-transacoes" exact component={FinancialGalaxPayErrorTransactions} />
+      <Route path="/financeiro/galaxy-pay/debug-respostas" exact component={FinancialGalaxPayDebugAnswer} />
+      <Route path="/financeiro/galaxy-pay/imprimir-massas" exact component={FinancialGalaxPayPrintMass} />
 
     </BrowserRouter>
   );
