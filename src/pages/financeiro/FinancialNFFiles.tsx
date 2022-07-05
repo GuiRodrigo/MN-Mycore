@@ -17,7 +17,6 @@ export function FinancialNFFiles() {
                         <img src={NF21File} alt="NF 21 - Arquivo" />
                     </div>
 
-
                 </div>
             </div >
             <Footer />

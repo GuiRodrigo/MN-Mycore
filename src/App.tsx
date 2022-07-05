@@ -267,6 +267,13 @@ import { FinancialGalaxPayTransactions } from './pages/financeiro/FinancialGalax
 import { FinancialGalaxPayErrorTransactions } from './pages/financeiro/FinancialGalaxPayErrorTransactions'
 import { FinancialGalaxPayDebugAnswer } from './pages/financeiro/FinancialGalaxPayDebugAnswer'
 import { FinancialGalaxPayPrintMass } from './pages/financeiro/FinancialGalaxPayPrintMass'
+import { FinancialGalaxPaySupportWithoutInvoice } from './pages/financeiro/FinancialGalaxPaySupportWithoutInvoice'
+import { FinancialF2BInstallments } from './pages/financeiro/FinancialF2BInstallments'
+import { FinancialF2BCarnet } from './pages/financeiro/FinancialF2BCarnet'
+import { FinancialF2BTransactions } from './pages/financeiro/FinancialF2BTransactions'
+import { FinancialF2BErrorTransactions } from './pages/financeiro/FinancialF2BErrorTransactions'
+import { FinancialF2BDebugAnswer } from './pages/financeiro/FinancialF2BDebugAnswer'
+import { FinancialF2BSuporteWithoutInvoice } from './pages/financeiro/FinancialF2BSuporteWithoutInvoice'
 
 function App() {
   return (
@@ -550,6 +557,14 @@ function App() {
       <Route path="/financeiro/galaxy-pay/erro-transacoes" exact component={FinancialGalaxPayErrorTransactions} />
       <Route path="/financeiro/galaxy-pay/debug-respostas" exact component={FinancialGalaxPayDebugAnswer} />
       <Route path="/financeiro/galaxy-pay/imprimir-massas" exact component={FinancialGalaxPayPrintMass} />
+      <Route path="/financeiro/galaxy-pay/suporte-sem-fatura" exact component={FinancialGalaxPaySupportWithoutInvoice} />
+
+      <Route path="/financeiro/F2B/parcelas" exact component={FinancialF2BInstallments} />
+      <Route path="/financeiro/F2B/carnes" exact component={FinancialF2BCarnet} />
+      <Route path="/financeiro/F2B/transacoes" exact component={FinancialF2BTransactions} />
+      <Route path="/financeiro/F2B/erro-transacoes" exact component={FinancialF2BErrorTransactions} />
+      <Route path="/financeiro/F2B/debug-respostas" exact component={FinancialF2BDebugAnswer} />
+      <Route path="/financeiro/F2B/suporte-sem-fatura" exact component={FinancialF2BSuporteWithoutInvoice} />
 
     </BrowserRouter>
   );
