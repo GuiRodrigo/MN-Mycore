@@ -274,6 +274,9 @@ import { FinancialF2BTransactions } from './pages/financeiro/FinancialF2BTransac
 import { FinancialF2BErrorTransactions } from './pages/financeiro/FinancialF2BErrorTransactions'
 import { FinancialF2BDebugAnswer } from './pages/financeiro/FinancialF2BDebugAnswer'
 import { FinancialF2BSuporteWithoutInvoice } from './pages/financeiro/FinancialF2BSuporteWithoutInvoice'
+import { FinancialBoletoFácilCarnetInstallments } from './pages/financeiro/FinancialBoletoFácilCarnetInstallments'
+import { FinancialBoletoFácilTransactions } from './pages/financeiro/FinancialBoletoFácilTransactions'
+import { FinancialBoletoFácilErrorTransactions } from './pages/financeiro/FinancialBoletoFácilErrorTransactions'
 
 function App() {
   return (
@@ -565,6 +568,10 @@ function App() {
       <Route path="/financeiro/F2B/erro-transacoes" exact component={FinancialF2BErrorTransactions} />
       <Route path="/financeiro/F2B/debug-respostas" exact component={FinancialF2BDebugAnswer} />
       <Route path="/financeiro/F2B/suporte-sem-fatura" exact component={FinancialF2BSuporteWithoutInvoice} />
+
+      <Route path="/financeiro/boleto-facil/carnes-parcelas" exact component={FinancialBoletoFácilCarnetInstallments} />
+      <Route path="/financeiro/boleto-facil/transacoes" exact component={FinancialBoletoFácilTransactions} />
+      <Route path="/financeiro/boleto-facil/erro-transacoes" exact component={FinancialBoletoFácilErrorTransactions} />
 
     </BrowserRouter>
   );
