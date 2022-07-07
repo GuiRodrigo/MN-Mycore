@@ -252,15 +252,15 @@ import { FinancialGerencianetTransactions } from './pages/financeiro/FinancialGe
 import { FinancialGerencianetErrorTransactions } from './pages/financeiro/FinancialGerencianetErrorTransactions'
 import { DrawnetDrawNetworkConfiguration } from './pages/Drawnet/DrawnetDrawNetworkConfiguration'
 import { FinancialGerencianetDebugAnswer } from './pages/financeiro/FinancialGerencianetDebugAnswer'
-
-import './styles/global.scss'
 import { FinancialGerencianetPrintMass } from './pages/financeiro/FinancialGerencianetPrintMass'
 import { FinancialGerencianetSupportWithoutInvoice } from './pages/financeiro/FinancialGerencianetSupportWithoutInvoice'
+
 import { FinancialWidePayInstallments } from './pages/financeiro/FinancialWidePayInstallments'
 import { FinancialWidePayTransactions } from './pages/financeiro/FinancialWidePayTransactions'
 import { FinancialWidePayErrorTransactions } from './pages/financeiro/FinancialWidePayErrorTransactions'
 import { FinancialWidePayDebugAnswer } from './pages/financeiro/FinancialWidePayDebugAnswer'
 import { FinancialWidePaySuportWithoutInvoice } from './pages/financeiro/FinancialWidePaySuportWithoutInvoice'
+
 import { FinancialGalaxPayInstallments } from './pages/financeiro/FinancialGalaxPayInstallments'
 import { FinancialGalaxPayCarnet } from './pages/financeiro/FinancialGalaxPayCarnet'
 import { FinancialGalaxPayTransactions } from './pages/financeiro/FinancialGalaxPayTransactions'
@@ -268,15 +268,27 @@ import { FinancialGalaxPayErrorTransactions } from './pages/financeiro/Financial
 import { FinancialGalaxPayDebugAnswer } from './pages/financeiro/FinancialGalaxPayDebugAnswer'
 import { FinancialGalaxPayPrintMass } from './pages/financeiro/FinancialGalaxPayPrintMass'
 import { FinancialGalaxPaySupportWithoutInvoice } from './pages/financeiro/FinancialGalaxPaySupportWithoutInvoice'
+
 import { FinancialF2BInstallments } from './pages/financeiro/FinancialF2BInstallments'
 import { FinancialF2BCarnet } from './pages/financeiro/FinancialF2BCarnet'
 import { FinancialF2BTransactions } from './pages/financeiro/FinancialF2BTransactions'
 import { FinancialF2BErrorTransactions } from './pages/financeiro/FinancialF2BErrorTransactions'
 import { FinancialF2BDebugAnswer } from './pages/financeiro/FinancialF2BDebugAnswer'
 import { FinancialF2BSuporteWithoutInvoice } from './pages/financeiro/FinancialF2BSuporteWithoutInvoice'
+
 import { FinancialBoletoFácilCarnetInstallments } from './pages/financeiro/FinancialBoletoFácilCarnetInstallments'
 import { FinancialBoletoFácilTransactions } from './pages/financeiro/FinancialBoletoFácilTransactions'
 import { FinancialBoletoFácilErrorTransactions } from './pages/financeiro/FinancialBoletoFácilErrorTransactions'
+import { FinancialBoletoFácilDebugAnswer } from './pages/financeiro/FinancialBoletoFácilDebugAnswer'
+
+import './styles/global.scss'
+import { FinancialBoletoFácilSupportWithoutInvoice } from './pages/financeiro/FinancialBoletoFácilSupportWithoutInvoice'
+import { FinancialPulsarPayInstallment } from './pages/financeiro/FinancialPulsarPayInstallment'
+import { FinancialPulsarPayCarnet } from './pages/financeiro/FinancialPulsarPayCarnet'
+import { FinancialPulsarPayTransactions } from './pages/financeiro/FinancialPulsarPayTransactions'
+import { FinancialPulsarPayErrorTransactions } from './pages/financeiro/FinancialPulsarPayErrorTransactions'
+import { FinancialPulsarDebugAnswer } from './pages/financeiro/FinancialPulsarDebugAnswer'
+import { FinancialPulsarSupportWithoutInvoice } from './pages/financeiro/FinancialPulsarSupportWithoutInvoice'
 
 function App() {
   return (
@@ -572,6 +584,15 @@ function App() {
       <Route path="/financeiro/boleto-facil/carnes-parcelas" exact component={FinancialBoletoFácilCarnetInstallments} />
       <Route path="/financeiro/boleto-facil/transacoes" exact component={FinancialBoletoFácilTransactions} />
       <Route path="/financeiro/boleto-facil/erro-transacoes" exact component={FinancialBoletoFácilErrorTransactions} />
+      <Route path="/financeiro/boleto-facil/debug-respostas" exact component={FinancialBoletoFácilDebugAnswer} />
+      <Route path="/financeiro/boleto-facil/suporte-sem-fatura" exact component={FinancialBoletoFácilSupportWithoutInvoice} />
+
+      <Route path="/financeiro/pulsar-pay/parcelas" exact component={FinancialPulsarPayInstallment} />
+      <Route path="/financeiro/pulsar-pay/carnes" exact component={FinancialPulsarPayCarnet} />
+      <Route path="/financeiro/pulsar-pay/transacoes" exact component={FinancialPulsarPayTransactions} />
+      <Route path="/financeiro/pulsar-pay/erro-transacoes" exact component={FinancialPulsarPayErrorTransactions} />
+      <Route path="/financeiro/pulsar-pay/debugar-respostas" exact component={FinancialPulsarDebugAnswer} />
+      <Route path="/financeiro/pulsar-pay/suporte-sem-fatura" exact component={FinancialPulsarSupportWithoutInvoice} />
 
     </BrowserRouter>
   );
