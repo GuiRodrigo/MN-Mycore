@@ -10,9 +10,11 @@ export function ConfigApi() {
                 <Menu />
                 <div id="textContent" >
                     <h3> Módulo Configurações{" > "}API</h3>
-                    <p>Na tela, abaixo, visualiza-se a configuração necessária para habilitar a funcionalidade de agregar a API do Mycore a um ambiente personalizado do cliente.</p>
 
-                    <img src={APIServerConfiguration} alt="Configuração Servidor - API" />
+                    <div>
+                        <p>Na tela, abaixo, visualiza-se a configuração necessária para habilitar a funcionalidade de agregar a API do Mycore a um ambiente personalizado do cliente.</p>
+                        <img src={APIServerConfiguration} alt="Configuração Servidor - API" />
+                    </div>
 
                 </div>
             </div>

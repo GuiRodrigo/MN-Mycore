@@ -131,6 +131,7 @@ import { ConfigContractsOptions } from './pages/configuracoes/ConfigContractsOpt
 import { ConfigOrderService } from './pages/configuracoes/ConfigOrderService'
 import { ConfigOrderServiceExisting } from './pages/configuracoes/ConfigOrderServiceExisting'
 import { ConfigOrderServiceNew } from './pages/configuracoes/ConfigOrderServiceNew'
+import { ConfigOrderServiceOptions } from './pages/configuracoes/ConfigOrderServiceOptions'
 
 import { ConfigBackup } from './pages/configuracoes/ConfigBackup'
 import { ConfigBackupCreate } from './pages/configuracoes/ConfigBackupCreate'
@@ -246,7 +247,7 @@ import { FinancialNFDebugLog } from './pages/financeiro/FinancialNFDebugLog'
 
 import { FinancialAccountsPay } from './pages/financeiro/FinancialAccountsPay'
 import { FinancialGerencianetInstallments } from './pages/financeiro/FinancialGerencianetInstallments'
-import { AccountsPaySupplier } from './pages/financeiro/Financial AccountsPaySupplier'
+import { AccountsPaySupplier } from './pages/financeiro/FinancialAccountsPaySupplier'
 
 import { FinancialGerencianetTransactions } from './pages/financeiro/FinancialGerencianetTransactions'
 import { FinancialGerencianetErrorTransactions } from './pages/financeiro/FinancialGerencianetErrorTransactions'
@@ -280,15 +281,23 @@ import { FinancialBoletoFácilCarnetInstallments } from './pages/financeiro/Fina
 import { FinancialBoletoFácilTransactions } from './pages/financeiro/FinancialBoletoFácilTransactions'
 import { FinancialBoletoFácilErrorTransactions } from './pages/financeiro/FinancialBoletoFácilErrorTransactions'
 import { FinancialBoletoFácilDebugAnswer } from './pages/financeiro/FinancialBoletoFácilDebugAnswer'
-
-import './styles/global.scss'
 import { FinancialBoletoFácilSupportWithoutInvoice } from './pages/financeiro/FinancialBoletoFácilSupportWithoutInvoice'
+
 import { FinancialPulsarPayInstallment } from './pages/financeiro/FinancialPulsarPayInstallment'
 import { FinancialPulsarPayCarnet } from './pages/financeiro/FinancialPulsarPayCarnet'
 import { FinancialPulsarPayTransactions } from './pages/financeiro/FinancialPulsarPayTransactions'
 import { FinancialPulsarPayErrorTransactions } from './pages/financeiro/FinancialPulsarPayErrorTransactions'
 import { FinancialPulsarDebugAnswer } from './pages/financeiro/FinancialPulsarDebugAnswer'
 import { FinancialPulsarSupportWithoutInvoice } from './pages/financeiro/FinancialPulsarSupportWithoutInvoice'
+
+/* <----------------------------------------------------HELP DESK----------------------------------------------------------------------------> */
+
+import './styles/global.scss'
+import { HelpDeskSummary } from './pages/help-desk/HelpDeskSummary'
+import { HelpDesk } from './pages/help-desk/HelpDesk'
+import { HelpDeskMySupports } from './pages/help-desk/HelpDeskMySupports'
+import { HelpDeskClosedSupports } from './pages/help-desk/HelpDeskClosedSupports'
+
 
 function App() {
   return (
@@ -425,7 +434,8 @@ function App() {
 
       <Route path="/configuracoes/ordem-servico" exact component={ConfigOrderService} />
       <Route path="/configuracoes/ordem-servico/existente" exact component={ConfigOrderServiceExisting} />
-      <Route path="/configuracoes/ordem-servico/novo" exact component={ConfigOrderServiceNew} />
+      <Route path="/configuracoes/ordem-servico/nova" exact component={ConfigOrderServiceNew} />
+      <Route path="/configuracoes/ordem-servico/opcoes" exact component={ConfigOrderServiceOptions} />
 
       <Route path="/configuracoes/backup" exact component={ConfigBackup} />
       <Route path="/configuracoes/backup/criar" exact component={ConfigBackupCreate} />
@@ -563,14 +573,14 @@ function App() {
       <Route path="/financeiro/wide-pay/carnes-parcelas" exact component={FinancialWidePayInstallments} />
       <Route path="/financeiro/wide-pay/transacoes" exact component={FinancialWidePayTransactions} />
       <Route path="/financeiro/wide-pay/erro-transacoes" exact component={FinancialWidePayErrorTransactions} />
-      <Route path="/financeiro/wide-pay/debug-respostas" exact component={FinancialWidePayDebugAnswer} />
+      <Route path="/financeiro/wide-pay/debug-resposta" exact component={FinancialWidePayDebugAnswer} />
       <Route path="/financeiro/wide-pay/suporte-sem-fatura" exact component={FinancialWidePaySuportWithoutInvoice} />
 
       <Route path="/financeiro/galaxy-pay/parcelas" exact component={FinancialGalaxPayInstallments} />
       <Route path="/financeiro/galaxy-pay/carnes" exact component={FinancialGalaxPayCarnet} />
       <Route path="/financeiro/galaxy-pay/transacoes" exact component={FinancialGalaxPayTransactions} />
       <Route path="/financeiro/galaxy-pay/erro-transacoes" exact component={FinancialGalaxPayErrorTransactions} />
-      <Route path="/financeiro/galaxy-pay/debug-respostas" exact component={FinancialGalaxPayDebugAnswer} />
+      <Route path="/financeiro/galaxy-pay/debug-resposta" exact component={FinancialGalaxPayDebugAnswer} />
       <Route path="/financeiro/galaxy-pay/imprimir-massas" exact component={FinancialGalaxPayPrintMass} />
       <Route path="/financeiro/galaxy-pay/suporte-sem-fatura" exact component={FinancialGalaxPaySupportWithoutInvoice} />
 
@@ -578,21 +588,28 @@ function App() {
       <Route path="/financeiro/F2B/carnes" exact component={FinancialF2BCarnet} />
       <Route path="/financeiro/F2B/transacoes" exact component={FinancialF2BTransactions} />
       <Route path="/financeiro/F2B/erro-transacoes" exact component={FinancialF2BErrorTransactions} />
-      <Route path="/financeiro/F2B/debug-respostas" exact component={FinancialF2BDebugAnswer} />
+      <Route path="/financeiro/F2B/debug-resposta" exact component={FinancialF2BDebugAnswer} />
       <Route path="/financeiro/F2B/suporte-sem-fatura" exact component={FinancialF2BSuporteWithoutInvoice} />
 
       <Route path="/financeiro/boleto-facil/carnes-parcelas" exact component={FinancialBoletoFácilCarnetInstallments} />
       <Route path="/financeiro/boleto-facil/transacoes" exact component={FinancialBoletoFácilTransactions} />
       <Route path="/financeiro/boleto-facil/erro-transacoes" exact component={FinancialBoletoFácilErrorTransactions} />
-      <Route path="/financeiro/boleto-facil/debug-respostas" exact component={FinancialBoletoFácilDebugAnswer} />
+      <Route path="/financeiro/boleto-facil/debug-resposta" exact component={FinancialBoletoFácilDebugAnswer} />
       <Route path="/financeiro/boleto-facil/suporte-sem-fatura" exact component={FinancialBoletoFácilSupportWithoutInvoice} />
 
       <Route path="/financeiro/pulsar-pay/parcelas" exact component={FinancialPulsarPayInstallment} />
       <Route path="/financeiro/pulsar-pay/carnes" exact component={FinancialPulsarPayCarnet} />
       <Route path="/financeiro/pulsar-pay/transacoes" exact component={FinancialPulsarPayTransactions} />
       <Route path="/financeiro/pulsar-pay/erro-transacoes" exact component={FinancialPulsarPayErrorTransactions} />
-      <Route path="/financeiro/pulsar-pay/debugar-respostas" exact component={FinancialPulsarDebugAnswer} />
+      <Route path="/financeiro/pulsar-pay/debug-resposta" exact component={FinancialPulsarDebugAnswer} />
       <Route path="/financeiro/pulsar-pay/suporte-sem-fatura" exact component={FinancialPulsarSupportWithoutInvoice} />
+
+      {/* <----------------------------------------------------HELP DESK----------------------------------------------------------------------------> */}
+
+      <Route path="/help-desk/" exact component={HelpDesk} />
+      <Route path="/help-desk/resumo" exact component={HelpDeskSummary} />
+      <Route path="/help-desk/meus-suportes" exact component={HelpDeskMySupports} />
+      <Route path="/help-desk/suportes-fechados" exact component={HelpDeskClosedSupports} />
 
     </BrowserRouter>
   );
