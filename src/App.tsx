@@ -297,6 +297,12 @@ import { HelpDeskSummary } from './pages/help-desk/HelpDeskSummary'
 import { HelpDesk } from './pages/help-desk/HelpDesk'
 import { HelpDeskMySupports } from './pages/help-desk/HelpDeskMySupports'
 import { HelpDeskClosedSupports } from './pages/help-desk/HelpDeskClosedSupports'
+import { HelpDeskPanel } from './pages/help-desk/HelpDeskPanel'
+import { HelpDeskSupportsSystem } from './pages/help-desk/HelpDeskSupportsSystem'
+import { HelpDeskMonitoring } from './pages/help-desk/HelpDeskMonitoring'
+import { HelpDeskCallCenter } from './pages/help-desk/HelpDeskCallCenter'
+import { HelpDeskCallCenterOpenSupport } from './pages/help-desk/HelpDeskCallCenterOpenSupport'
+import { HelpDeskCallCenterDataClient } from './pages/help-desk/HelpDeskCallCenterDataClient'
 
 
 function App() {
@@ -610,6 +616,13 @@ function App() {
       <Route path="/help-desk/resumo" exact component={HelpDeskSummary} />
       <Route path="/help-desk/meus-suportes" exact component={HelpDeskMySupports} />
       <Route path="/help-desk/suportes-fechados" exact component={HelpDeskClosedSupports} />
+      <Route path="/help-desk/painel" exact component={HelpDeskPanel} />
+      <Route path="/help-desk/suporte-sistema" exact component={HelpDeskSupportsSystem} />
+      <Route path="/help-desk/monitoramento" exact component={HelpDeskMonitoring} />
+
+      <Route path="/help-desk/call-center" exact component={HelpDeskCallCenter} />
+      <Route path="/help-desk/call-center/abrir-suporte" exact component={HelpDeskCallCenterOpenSupport} />
+      <Route path="/help-desk/call-center/dados-cliente" exact component={HelpDeskCallCenterDataClient} />
 
     </BrowserRouter>
   );
