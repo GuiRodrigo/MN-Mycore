@@ -304,6 +304,11 @@ import { HelpDeskCallCenterOpenSupport } from './pages/help-desk/HelpDeskCallCen
 import { HelpDeskCallCenterDataClient } from './pages/help-desk/HelpDeskCallCenterDataClient'
 import { HelpDeskCallCenterEditClient } from './pages/help-desk/HelpDeskCallCenterEditClient'
 import { HelpDeskCallCenterViewAttachments } from './pages/help-desk/HelpDeskCallCenterViewAttachments'
+import { HelpDeskCallCenter } from './pages/help-desk/HelpDeskCallCenter'
+import { HelpDeskCallCenterLogins } from './pages/help-desk/HelpDeskCallCenterLogins'
+import { HelpDeskCallCenterContracts } from './pages/help-desk/HelpDeskCallCenterContracts'
+import { HelpDeskCallCenterAppliedMaterials } from './pages/help-desk/HelpDeskCallCenterAppliedMaterials'
+import { HelpDeskCallCenterDashboard } from './pages/help-desk/HelpDeskCallCenterDashboard'
 
 
 function App() {
@@ -621,10 +626,15 @@ function App() {
       <Route path="/help-desk/suporte-sistema" exact component={HelpDeskSupportsSystem} />
       <Route path="/help-desk/monitoramento" exact component={HelpDeskMonitoring} />
 
+      <Route path="/help-desk/call-center" exact component={HelpDeskCallCenter} />
       <Route path="/help-desk/call-center/abrir-suporte" exact component={HelpDeskCallCenterOpenSupport} />
       <Route path="/help-desk/call-center/dados-cliente" exact component={HelpDeskCallCenterDataClient} />
       <Route path="/help-desk/call-center/editar-cliente" exact component={HelpDeskCallCenterEditClient} />
       <Route path="/help-desk/call-center/ver-anexos" exact component={HelpDeskCallCenterViewAttachments} />
+      <Route path="/help-desk/call-center/login" exact component={HelpDeskCallCenterLogins} />
+      <Route path="/help-desk/call-center/contratos" exact component={HelpDeskCallCenterContracts} />
+      <Route path="/help-desk/call-center/materiais-aplicados" exact component={HelpDeskCallCenterAppliedMaterials} />
+      <Route path="/help-desk/call-center/dashboard" exact component={HelpDeskCallCenterDashboard} />
 
     </BrowserRouter>
   );
