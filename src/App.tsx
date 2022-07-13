@@ -292,14 +292,15 @@ import { FinancialPulsarSupportWithoutInvoice } from './pages/financeiro/Financi
 
 /* <----------------------------------------------------HELP DESK----------------------------------------------------------------------------> */
 
-import './styles/global.scss'
-import { HelpDeskSummary } from './pages/help-desk/HelpDeskSummary'
 import { HelpDesk } from './pages/help-desk/HelpDesk'
+
+import { HelpDeskSummary } from './pages/help-desk/HelpDeskSummary'
 import { HelpDeskMySupports } from './pages/help-desk/HelpDeskMySupports'
 import { HelpDeskClosedSupports } from './pages/help-desk/HelpDeskClosedSupports'
 import { HelpDeskPanel } from './pages/help-desk/HelpDeskPanel'
 import { HelpDeskSupportsSystem } from './pages/help-desk/HelpDeskSupportsSystem'
 import { HelpDeskMonitoring } from './pages/help-desk/HelpDeskMonitoring'
+
 import { HelpDeskCallCenterOpenSupport } from './pages/help-desk/HelpDeskCallCenterOpenSupport'
 import { HelpDeskCallCenterDataClient } from './pages/help-desk/HelpDeskCallCenterDataClient'
 import { HelpDeskCallCenterEditClient } from './pages/help-desk/HelpDeskCallCenterEditClient'
@@ -309,6 +310,18 @@ import { HelpDeskCallCenterLogins } from './pages/help-desk/HelpDeskCallCenterLo
 import { HelpDeskCallCenterContracts } from './pages/help-desk/HelpDeskCallCenterContracts'
 import { HelpDeskCallCenterAppliedMaterials } from './pages/help-desk/HelpDeskCallCenterAppliedMaterials'
 import { HelpDeskCallCenterDashboard } from './pages/help-desk/HelpDeskCallCenterDashboard'
+import { HelpDeskCallCenterNewCustomer } from './pages/help-desk/HelpDeskCallCenterNewCustomer'
+import { HelpDeskCallCenterHistoryFinancialAll } from './pages/help-desk/HelpDeskCallCenterHistoryFinancialAll'
+import { HelpDeskCallCenterHistorySupportAll } from './pages/help-desk/HelpDeskCallCenterHistorySupportAll'
+
+import { HelpDeskOrderService } from './pages/help-desk/HelpDeskOrderService'
+import { HelpDeskSupervisionField } from './pages/help-desk/HelpDeskSupervisionField'
+
+/* <----------------------------------------------------MATERIAIS----------------------------------------------------------------------------> */
+
+import { Materials } from './pages/materiais/Materials'
+
+import './styles/global.scss'
 
 
 function App() {
@@ -635,6 +648,20 @@ function App() {
       <Route path="/help-desk/call-center/contratos" exact component={HelpDeskCallCenterContracts} />
       <Route path="/help-desk/call-center/materiais-aplicados" exact component={HelpDeskCallCenterAppliedMaterials} />
       <Route path="/help-desk/call-center/dashboard" exact component={HelpDeskCallCenterDashboard} />
+      <Route path="/help-desk/call-center/novo-cliente" exact component={HelpDeskCallCenterNewCustomer} />
+      <Route path="/help-desk/call-center/historico-financeiro-todos" exact component={HelpDeskCallCenterHistoryFinancialAll} />
+      <Route path="/help-desk/call-center/historico-suporte-todos" exact component={HelpDeskCallCenterHistorySupportAll} />
+
+      <Route path="/help-desk/ordem-servico" exact component={HelpDeskOrderService} />
+      <Route path="/help-desk/supervicao-campo" exact component={HelpDeskSupervisionField} />
+
+ {/* <----------------------------------------------------MATERIAIS----------------------------------------------------------------------------> */}
+
+      <Route path="/materiais" exact component={Materials} />
+
+ {/* <----------------------------------------------------MEU-CAIXA----------------------------------------------------------------------------> */}
+
+ <Route path="/materiais" exact component={Materials} />
 
     </BrowserRouter>
   );
