@@ -322,6 +322,11 @@ import { HelpDeskSupervisionField } from './pages/help-desk/HelpDeskSupervisionF
 import { Materials } from './pages/materiais/Materials'
 
 import './styles/global.scss'
+import { MyBox } from './pages/meu-caixa/MyBox'
+import { Network } from './pages/network/Network'
+import { NetworkServidorIpAliasesGateway } from './pages/network/NetworkServidorIpAliasesGateway'
+import { NetworkRadiusServerConcentrators } from './pages/network/NetworkRadiusServerConcentrators'
+import { NetworkRadiusServerActiveSessions } from './pages/network/NetworkRadiusServerActiveSessions'
 
 
 function App() {
@@ -655,13 +660,22 @@ function App() {
       <Route path="/help-desk/ordem-servico" exact component={HelpDeskOrderService} />
       <Route path="/help-desk/supervicao-campo" exact component={HelpDeskSupervisionField} />
 
- {/* <----------------------------------------------------MATERIAIS----------------------------------------------------------------------------> */}
+      {/* <----------------------------------------------------MATERIAIS----------------------------------------------------------------------------> */}
 
       <Route path="/materiais" exact component={Materials} />
 
- {/* <----------------------------------------------------MEU-CAIXA----------------------------------------------------------------------------> */}
+      {/* <----------------------------------------------------MEU-CAIXA----------------------------------------------------------------------------> */}
 
- <Route path="/materiais" exact component={Materials} />
+      <Route path="/meu-caixa" exact component={MyBox} />
+
+      {/* <----------------------------------------------------NETWORK----------------------------------------------------------------------------> */}
+
+      <Route path="/network" exact component={Network} />
+
+      <Route path="/network/servidor/ip-aliases-gateway" exact component={NetworkServidorIpAliasesGateway} />
+
+      <Route path="/network/radius-server/concentradores" exact component={NetworkRadiusServerConcentrators} />
+      <Route path="/network/radius-server/sessoes-ativas" exact component={NetworkRadiusServerActiveSessions} />
 
     </BrowserRouter>
   );
