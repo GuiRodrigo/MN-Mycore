@@ -327,6 +327,12 @@ import { Network } from './pages/network/Network'
 import { NetworkServidorIpAliasesGateway } from './pages/network/NetworkServidorIpAliasesGateway'
 import { NetworkRadiusServerConcentrators } from './pages/network/NetworkRadiusServerConcentrators'
 import { NetworkRadiusServerActiveSessions } from './pages/network/NetworkRadiusServerActiveSessions'
+import { NetworkRadiusServerTerminatedSessions } from './pages/network/NetworkRadiusServerTerminatedSessions'
+import { NetworkRadiusServerLogins } from './pages/network/NetworkRadiusServerLogins'
+import { NetworkRadiusServerHistoryLogins } from './pages/network/NetworkRadiusServerHistoryLogins'
+import { NetworkRadiusServerDebug } from './pages/network/NetworkRadiusServerDebug'
+import { NetworkRadiusServerMonitoringPointAccessSummary } from './pages/network/NetworkRadiusServerMonitoringPointAccessSummary'
+import { NetworkRadiusServerMonitoringInterfaceNetwork } from './pages/network/NetworkRadiusServerMonitoringInterfaceNetwork'
 
 
 function App() {
@@ -676,6 +682,14 @@ function App() {
 
       <Route path="/network/radius-server/concentradores" exact component={NetworkRadiusServerConcentrators} />
       <Route path="/network/radius-server/sessoes-ativas" exact component={NetworkRadiusServerActiveSessions} />
+      <Route path="/network/radius-server/sessoes-terminadas" exact component={NetworkRadiusServerTerminatedSessions} />
+      <Route path="/network/radius-server/logins" exact component={NetworkRadiusServerLogins} />
+      <Route path="/network/radius-server/historico-logins" exact component={NetworkRadiusServerHistoryLogins} />
+      <Route path="/network/radius-server/depurar" exact component={NetworkRadiusServerDebug} />
+
+      <Route path="/network/radius-server/monitoramento/ponto-acesso/resumo" exact component={NetworkRadiusServerMonitoringPointAccessSummary} />
+
+      <Route path="/network/radius-server/monitoramento/interface-rede" exact component={NetworkRadiusServerMonitoringInterfaceNetwork} />
 
     </BrowserRouter>
   );
