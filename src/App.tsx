@@ -321,18 +321,56 @@ import { HelpDeskSupervisionField } from './pages/help-desk/HelpDeskSupervisionF
 
 import { Materials } from './pages/materiais/Materials'
 
-import './styles/global.scss'
+/* <----------------------------------------------------MEU-CAIXA----------------------------------------------------------------------------> */
+
 import { MyBox } from './pages/meu-caixa/MyBox'
+
+/* <----------------------------------------------------NETWORK----------------------------------------------------------------------------> */
+
 import { Network } from './pages/network/Network'
+
 import { NetworkServidorIpAliasesGateway } from './pages/network/NetworkServidorIpAliasesGateway'
+
 import { NetworkRadiusServerConcentrators } from './pages/network/NetworkRadiusServerConcentrators'
 import { NetworkRadiusServerActiveSessions } from './pages/network/NetworkRadiusServerActiveSessions'
 import { NetworkRadiusServerTerminatedSessions } from './pages/network/NetworkRadiusServerTerminatedSessions'
 import { NetworkRadiusServerLogins } from './pages/network/NetworkRadiusServerLogins'
 import { NetworkRadiusServerHistoryLogins } from './pages/network/NetworkRadiusServerHistoryLogins'
 import { NetworkRadiusServerDebug } from './pages/network/NetworkRadiusServerDebug'
-import { NetworkRadiusServerMonitoringPointAccessSummary } from './pages/network/NetworkRadiusServerMonitoringPointAccessSummary'
-import { NetworkRadiusServerMonitoringInterfaceNetwork } from './pages/network/NetworkRadiusServerMonitoringInterfaceNetwork'
+
+import { NetworkMonitoringPointAccessSummary } from './pages/network/NetworkMonitoringPointAccessSummary'
+import { NetworkMonitoringInterfaceNetwork } from './pages/network/NetworkMonitoringInterfaceNetwork'
+import { NetworkMonitoringIPConntrack } from './pages/network/NetworkMonitoringIPConntrack'
+import { NetworkMonitoringLoadAverageMemory } from './pages/network/NetworkMonitoringLoadAverageMemory'
+import { NetworkMonitoringHardDisk } from './pages/network/NetworkMonitoringHardDisk'
+import { NetworkMonitoringStorage } from './pages/network/NetworkMonitoringStorage'
+
+import { NetworkDocumentationRedeDrawnet, } from './pages/network/NetworkDocumentationRedeDrawnet'
+
+import { NetworkOLTDatacom } from './pages/network/NetworkOLTDatacom'
+import { NetworkOLTHuawei } from './pages/network/NetworkOLTHuawei'
+import { NetworkOLTServerFTP } from './pages/network/NetworkOLTServerFTP'
+
+import { NetworkIP } from './pages/network/NetworkIP'
+
+import { NetworkDNSServer } from './pages/network/NetworkDNSServer'
+
+import { NetworkDHCPServer } from './pages/network/NetworkDHCPServer'
+
+import { NetworkRouteOSPFDistribution } from './pages/network/NetworkRouteOSPFDistribution'
+import { NetworkRouteamentoOSPFInterfaces } from './pages/network/NetworkRouteamentoOSPFInterfaces'
+import { NetworkRouteOSPFArea } from './pages/network/NetworkRouteOSPFArea'
+import { NetworkRouteOSPFNetwork } from './pages/network/NetworkRouteOSPFNetwork'
+import { NetworkRouteOSPFNeighbors } from './pages/network/NetworkRouteOSPFNeighbors'
+import { NetworkRoutingOSPFRoutes } from './pages/network/NetworkRoutingOSPFRoutes'
+import { NetworkRoutingOSPFLog } from './pages/network/NetworkRoutingOSPFLog'
+
+import { NetworkPPoESActiveSessions } from './pages/network/NetworkPPoESActiveSessions'
+import { NetworkPPoEInterfaces } from './pages/network/NetworkPPoEInterfaces'
+import { NetworkPPoEServices } from './pages/network/NetworkPPoEServices'
+
+import './styles/global.scss'
+import { Reports } from './pages/relatorios/Reports'
 
 
 function App() {
@@ -687,10 +725,41 @@ function App() {
       <Route path="/network/radius-server/historico-logins" exact component={NetworkRadiusServerHistoryLogins} />
       <Route path="/network/radius-server/depurar" exact component={NetworkRadiusServerDebug} />
 
-      <Route path="/network/radius-server/monitoramento/ponto-acesso/resumo" exact component={NetworkRadiusServerMonitoringPointAccessSummary} />
+      <Route path="/network/monitoramento/ponto-acesso/resumo" exact component={NetworkMonitoringPointAccessSummary} />
 
-      <Route path="/network/radius-server/monitoramento/interface-rede" exact component={NetworkRadiusServerMonitoringInterfaceNetwork} />
+      <Route path="/network/monitoramento/interface-rede" exact component={NetworkMonitoringInterfaceNetwork} />
+      <Route path="/network/monitoramento/ip-conntrack" exact component={NetworkMonitoringIPConntrack} />
+      <Route path="/network/monitoramento/load-average-memoria" exact component={NetworkMonitoringLoadAverageMemory} />
+      <Route path="/network/monitoramento/hard-disk" exact component={NetworkMonitoringHardDisk} />
+      <Route path="/network/monitoramento/armazenamento" exact component={NetworkMonitoringStorage} />
 
+      <Route path="/network/documemntacao-rede/drawnet" exact component={NetworkDocumentationRedeDrawnet} />
+
+      <Route path="/network/olt/datacon" exact component={NetworkOLTDatacom} />
+      <Route path="/network/olt/huawei" exact component={NetworkOLTHuawei} />
+      <Route path="/network/olt/servidor-ftp" exact component={NetworkOLTServerFTP} />
+
+      <Route path="/network/ip" exact component={NetworkIP} />
+
+      <Route path="/network/dns-server" exact component={NetworkDNSServer} />
+
+      <Route path="/network/dhcp-server" exact component={NetworkDHCPServer} />
+
+      <Route path="/network/roteamento/ospf/distribuicao" exact component={NetworkRouteOSPFDistribution} />
+      <Route path="/network/roteamento/ospf/interfaces" exact component={NetworkRouteamentoOSPFInterfaces} />
+      <Route path="/network/roteamento/ospf/areas" exact component={NetworkRouteOSPFArea} />
+      <Route path="/network/roteamento/ospf/network" exact component={NetworkRouteOSPFNetwork} />
+      <Route path="/network/roteamento/ospf/vizinhos" exact component={NetworkRouteOSPFNeighbors} />
+      <Route path="/network/roteamento/ospf/rotas" exact component={NetworkRoutingOSPFRoutes} />
+      <Route path="/network/roteamento/ospf/log" exact component={NetworkRoutingOSPFLog} />
+
+      <Route path="/network/ppoe/interfaces" exact component={NetworkPPoEInterfaces} />
+      <Route path="/network/ppoe/servicos" exact component={NetworkPPoEServices} />
+      <Route path="/network/ppoe/sessoes-ativas" exact component={NetworkPPoESActiveSessions} />
+
+      {/* <----------------------------------------------------NETWORK----------------------------------------------------------------------------> */}
+
+      <Route path="/relatorios" exact component={Reports} />
     </BrowserRouter>
   );
 }

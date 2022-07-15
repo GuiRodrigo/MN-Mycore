@@ -1,7 +1,7 @@
 import { Footer } from "../../components/footer";
 import { Menu } from "../../components/Menu";
 
-export function NetworkRadiusServerMonitoringPointAccessSummary() {
+export function NetworkMonitoringPointAccessSummary() {
     return (
         <div id="container">
             <div id="pageContent" >

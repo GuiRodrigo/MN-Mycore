@@ -22,19 +22,19 @@ export function MonitoringBranch() {
             </li>
 
 
-            <li> <Link className="noDropdown" to="#"> Interfaces de Rede </Link> </li>
+            <li> <Link className="noDropdown" to="/network/monitoramento/interface-rede"> Interfaces de Rede </Link> </li>
 
 
-            <li> <Link className="noDropdown" to="#"> IP Conntrack </Link> </li>
+            <li> <Link className="noDropdown" to="/network/monitoramento/ip-conntrack"> IP Conntrack </Link> </li>
 
 
-            <li> <Link className="noDropdown" to="#"> Load Average e Memória </Link> </li>
+            <li> <Link className="noDropdown" to="/network/monitoramento/load-average-memoria"> Load Average e Memória </Link> </li>
 
 
-            <li> <Link className="noDropdown" to="#"> Hard Disk </Link> </li>
+            <li> <Link className="noDropdown" to="/network/monitoramento/hard-disk"> Hard Disk </Link> </li>
 
 
-            <li> <Link className="noDropdown" to="#"> Armazenamento </Link> </li>
+            <li> <Link className="noDropdown" to="/network/monitoramento/armazenamento"> Armazenamento </Link> </li>
 
 
         </ul>

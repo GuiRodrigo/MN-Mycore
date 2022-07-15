@@ -107,7 +107,7 @@ export function ModuleBranch() {
                 <input type="checkbox" name="" id="HelpDeskBranch" onClick={() => { setHelpDeskBranchOpen(!isHelpDeskBranchOpen) }} />
                 <div className="withLabel" >
                     <label htmlFor="HelpDeskBranch"></label>
-                    <Link className="withDropdown" to="#">Help-Desk</Link>
+                    <Link className="withDropdown" to="/help-desk">Help-Desk</Link>
                 </div>
                 {isHelpDeskBranchOpen ?
                     <HelpDeskBranch />
@@ -115,17 +115,17 @@ export function ModuleBranch() {
             </li>
 
 
-            <li><Link className="noDropdown" to="#">Materiasis</Link></li>
+            <li><Link className="noDropdown" to="/materiais">Materiasis</Link></li>
 
 
-            <li><Link className="noDropdown" to="#">Menu-Caixa</Link></li>
+            <li><Link className="noDropdown" to="/meu-caixa">Menu-Caixa</Link></li>
 
 
             <li>
                 <input type="checkbox" name="" id="NetworkBranch" onClick={() => { setNetworkBranchOpen(!isNetworkBranchOpen) }} />
                 <div className="withLabel" >
                     <label htmlFor="NetworkBranch"></label>
-                    <Link className="withDropdown" to="#">Network</Link>
+                    <Link className="withDropdown" to="/network">Network</Link>
                 </div>
                 {isNetworkBranchOpen ?
                     <NetworkBranch />

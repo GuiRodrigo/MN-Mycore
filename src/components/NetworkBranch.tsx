@@ -81,13 +81,13 @@ export function NetworkBranch() {
             </li>
 
 
-            <li> <Link className="noDropdown" to="#"> IP </Link></li>
+            <li> <Link className="noDropdown" to="/network/ip"> IP </Link></li>
 
 
-            <li> <Link className="noDropdown" to="#"> DNS Server </Link></li>
+            <li> <Link className="noDropdown" to="/network/dns-server"> DNS Server </Link></li>
 
 
-            <li> <Link className="noDropdown" to="#"> DHCP Server </Link></li>
+            <li> <Link className="noDropdown" to="/network/dhcp-server"> DHCP Server </Link></li>
 
 
             <li> <input type="checkbox" name="" id="RoutingBranch" onClick={() => { setRoutingBranchOpen(!isRoutingBranchOpen) }} />
