@@ -137,7 +137,7 @@ export function ModuleBranch() {
                 <input type="checkbox" name="" id="ReportsBranch" onClick={() => { setReportsBranchOpen(!isReportsBranchOpen) }} />
                 <div className="withLabel" >
                     <label htmlFor="ReportsBranch"></label>
-                    <Link className="withDropdown" to="#">Relatórios</Link>
+                    <Link className="withDropdown" to="/relatorios">Relatórios</Link>
                 </div>
                 {isReportsBranchOpen ?
                     <ReportsBranch />

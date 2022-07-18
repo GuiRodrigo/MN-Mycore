@@ -371,6 +371,18 @@ import { NetworkPPoEServices } from './pages/network/NetworkPPoEServices'
 
 import './styles/global.scss'
 import { Reports } from './pages/relatorios/Reports'
+import { ReportsClientsNeighborhood } from './pages/relatorios/ReportsClientsNeighborhood'
+import { ReportsClientsCity } from './pages/relatorios/ReportsClientsCity'
+import { ReportsClientsTypePerson } from './pages/relatorios/ReportsClientsTypePerson'
+import { ReportsClientsStatus } from './pages/relatorios/ReportsClientsStatus'
+import { ReportsClientsBirthdays } from './pages/relatorios/ReportsClientsBirthdays'
+import { ReportsCustomersExpiration } from './pages/relatorios/ReportsCustomersExpiration'
+import { ReportsClientsGeolocation } from './pages/relatorios/ReportsClientsGeolocation'
+import { ReportsClientsGrowth } from './pages/relatorios/ReportsClientsGrowth'
+import { ReportsClientsStatusChanged } from './pages/relatorios/ReportsClientsStatusChanged'
+import { ReportsClientsOpenRecently } from './pages/relatorios/ReportsClientsOpenRecently'
+import { ReportsClientsChangeLogin } from './pages/relatorios/ReportsClientsChangeLogin'
+import { ReportsClientsRegisteredClients } from './pages/relatorios/ReportsClientsRegisteredClients'
 
 
 function App() {
@@ -760,6 +772,18 @@ function App() {
       {/* <----------------------------------------------------NETWORK----------------------------------------------------------------------------> */}
 
       <Route path="/relatorios" exact component={Reports} />
+      <Route path="/relatorios/clientes/bairros" exact component={ReportsClientsNeighborhood} />
+      <Route path="/relatorios/clientes/cidade" exact component={ReportsClientsCity} />
+      <Route path="/relatorios/clientes/tipo-pessoa" exact component={ReportsClientsTypePerson} />
+      <Route path="/relatorios/clientes/status" exact component={ReportsClientsStatus} />
+      <Route path="/relatorios/clientes/aniversario" exact component={ReportsClientsBirthdays} />
+      <Route path="/relatorios/clientes/vencimento" exact component={ReportsCustomersExpiration} />
+      <Route path="/relatorios/clientes/geolocalizacao" exact component={ReportsClientsGeolocation} />
+      <Route path="/relatorios/clientes/crescimento" exact component={ReportsClientsGrowth} />
+      <Route path="/relatorios/clientes/status-alteracao" exact component={ReportsClientsStatusChanged} />
+      <Route path="/relatorios/clientes/abertos-recentemente" exact component={ReportsClientsOpenRecently} />
+      <Route path="/relatorios/clientes/alteracao-login" exact component={ReportsClientsChangeLogin} />
+      <Route path="/relatorios/clientes/clientes-cadastrados" exact component={ReportsClientsRegisteredClients} />
     </BrowserRouter>
   );
 }
