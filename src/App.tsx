@@ -383,6 +383,14 @@ import { ReportsClientsStatusChanged } from './pages/relatorios/ReportsClientsSt
 import { ReportsClientsOpenRecently } from './pages/relatorios/ReportsClientsOpenRecently'
 import { ReportsClientsChangeLogin } from './pages/relatorios/ReportsClientsChangeLogin'
 import { ReportsClientsRegisteredClients } from './pages/relatorios/ReportsClientsRegisteredClients'
+import { ReportsClientsChangeMonthlyFee } from './pages/relatorios/ReportsClientsChangeMonthlyFee'
+import { ReportsClientsAlterationExpiration } from './pages/relatorios/ReportsClientsAlterationExpiration'
+import { ReportsClientsChangeBlocking } from './pages/relatorios/ReportsClientsChangeBlocking'
+import { ReportsClientsLocality } from './pages/relatorios/ReportsClientsLocality'
+import { ReportsClientSummaryAutomation } from './pages/relatorios/ReportsClientSummaryAutomation'
+import { ReportsClientsResearchimport } from './pages/relatorios/ReportsClientsResearch'
+import { ReportsFinancialDashboard } from './pages/relatorios/ReportsFinancialDashboard'
+import { ReportsFinancialInvoices } from './pages/relatorios/ReportsFinancialInvoices'
 
 
 function App() {
@@ -772,6 +780,7 @@ function App() {
       {/* <----------------------------------------------------NETWORK----------------------------------------------------------------------------> */}
 
       <Route path="/relatorios" exact component={Reports} />
+
       <Route path="/relatorios/clientes/bairros" exact component={ReportsClientsNeighborhood} />
       <Route path="/relatorios/clientes/cidade" exact component={ReportsClientsCity} />
       <Route path="/relatorios/clientes/tipo-pessoa" exact component={ReportsClientsTypePerson} />
@@ -784,6 +793,15 @@ function App() {
       <Route path="/relatorios/clientes/abertos-recentemente" exact component={ReportsClientsOpenRecently} />
       <Route path="/relatorios/clientes/alteracao-login" exact component={ReportsClientsChangeLogin} />
       <Route path="/relatorios/clientes/clientes-cadastrados" exact component={ReportsClientsRegisteredClients} />
+      <Route path="/relatorios/clientes/alteracao-mensalidade" exact component={ReportsClientsChangeMonthlyFee} />
+      <Route path="/relatorios/clientes/alteracao-vencimento" exact component={ReportsClientsAlterationExpiration} />
+      <Route path="/relatorios/clientes/alteracao-bloqueio" exact component={ReportsClientsChangeBlocking} />
+      <Route path="/relatorios/clientes/localidade" exact component={ReportsClientsLocality} />
+      <Route path="/relatorios/clientes/resumo-automacao" exact component={ReportsClientSummaryAutomation} />
+      <Route path="/relatorios/clientes/pesquisa" exact component={ReportsClientsResearchimport} />
+
+      <Route path="/relatorios/financeiro/dashboard" exact component={ReportsFinancialDashboard} />
+      <Route path="/relatorios/financeiro/faturas" exact component={ReportsFinancialInvoices} />
     </BrowserRouter>
   );
 }
