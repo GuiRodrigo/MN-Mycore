@@ -391,6 +391,8 @@ import { ReportsClientSummaryAutomation } from './pages/relatorios/ReportsClient
 import { ReportsClientsResearchimport } from './pages/relatorios/ReportsClientsResearch'
 import { ReportsFinancialDashboard } from './pages/relatorios/ReportsFinancialDashboard'
 import { ReportsFinancialInvoices } from './pages/relatorios/ReportsFinancialInvoices'
+import { ReportsFinancialNF21 } from './pages/relatorios/ReportsFinancialNF21'
+import { ReportsFinancialBilling } from './pages/relatorios/ReportsFinancialBilling'
 
 
 function App() {
@@ -802,6 +804,8 @@ function App() {
 
       <Route path="/relatorios/financeiro/dashboard" exact component={ReportsFinancialDashboard} />
       <Route path="/relatorios/financeiro/faturas" exact component={ReportsFinancialInvoices} />
+      <Route path="/relatorios/financeiro/nf21" exact component={ReportsFinancialNF21} />
+      <Route path="/relatorios/financeiro/faturamento" exact component={ReportsFinancialBilling} />
     </BrowserRouter>
   );
 }
