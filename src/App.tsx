@@ -369,7 +369,8 @@ import { NetworkPPoESActiveSessions } from './pages/network/NetworkPPoESActiveSe
 import { NetworkPPoEInterfaces } from './pages/network/NetworkPPoEInterfaces'
 import { NetworkPPoEServices } from './pages/network/NetworkPPoEServices'
 
-import './styles/global.scss'
+/* <----------------------------------------------------NETWORK----------------------------------------------------------------------------> */
+
 import { Reports } from './pages/relatorios/Reports'
 import { ReportsClientsNeighborhood } from './pages/relatorios/ReportsClientsNeighborhood'
 import { ReportsClientsCity } from './pages/relatorios/ReportsClientsCity'
@@ -389,10 +390,27 @@ import { ReportsClientsChangeBlocking } from './pages/relatorios/ReportsClientsC
 import { ReportsClientsLocality } from './pages/relatorios/ReportsClientsLocality'
 import { ReportsClientSummaryAutomation } from './pages/relatorios/ReportsClientSummaryAutomation'
 import { ReportsClientsResearchimport } from './pages/relatorios/ReportsClientsResearch'
+
 import { ReportsFinancialDashboard } from './pages/relatorios/ReportsFinancialDashboard'
 import { ReportsFinancialInvoices } from './pages/relatorios/ReportsFinancialInvoices'
 import { ReportsFinancialNF21 } from './pages/relatorios/ReportsFinancialNF21'
 import { ReportsFinancialBilling } from './pages/relatorios/ReportsFinancialBilling'
+import { ReportsFinancialComparative } from './pages/relatorios/ReportsFinancialComparative'
+import { ReportsFinancialGraph } from './pages/relatorios/ReportsFinancialGraph'
+import { ReportsFinancialExpiredInvoices } from './pages/relatorios/ReportsFinancialExpiredInvoices'
+import { ReportsFinancialPromisePayment } from './pages/relatorios/ReportsFinancialPromisePayment'
+import { ReportsFinancialCancellationPromise } from './pages/relatorios/ReportsFinancialCancellationPromise'
+import { ReportsFinancialPaymentDuplicate } from './pages/relatorios/ReportsFinancialPaymentDuplicate'
+import { ReportsFinancialFlowCashDesk } from './pages/relatorios/ReportsFinancialFlowCashDesk'
+import { ReportsFinancialFlowDiary } from './pages/relatorios/ReportsFinancialFlowDiary'
+import { ReportsFinancialPaymentToMinor } from './pages/relatorios/ReportsFinancialPaymentToMinor'
+import { ReportsFinancialPaymentToMinorReleased } from './pages/relatorios/ReportsFinancialPaymentToMinorReleased'
+import { ReportsFinancialRestoredInvoices } from './pages/relatorios/ReportsFinancialRestoredInvoices'
+import { ReportsFinancialDeletedInvoices } from './pages/relatorios/ReportsFinancialDeletedInvoices'
+import { ReportsFinancialRemittancesDiscarded } from './pages/relatorios/ReportsFinancialRemittancesDiscarded'
+
+import './styles/global.scss'
+import { ReportsFinancialPaymentsDowngrades } from './pages/relatorios/ReportsFinancialPaymentsDowngrades'
 
 
 function App() {
@@ -806,6 +824,20 @@ function App() {
       <Route path="/relatorios/financeiro/faturas" exact component={ReportsFinancialInvoices} />
       <Route path="/relatorios/financeiro/nf21" exact component={ReportsFinancialNF21} />
       <Route path="/relatorios/financeiro/faturamento" exact component={ReportsFinancialBilling} />
+      <Route path="/relatorios/financeiro/comparativo" exact component={ReportsFinancialComparative} />
+      <Route path="/relatorios/financeiro/grafico" exact component={ReportsFinancialGraph} />
+      <Route path="/relatorios/financeiro/faturas-vencidas" exact component={ReportsFinancialExpiredInvoices} />
+      <Route path="/relatorios/financeiro/promessa-pagamento" exact component={ReportsFinancialPromisePayment} />
+      <Route path="/relatorios/financeiro/cancelamento-promessa" exact component={ReportsFinancialCancellationPromise} />
+      <Route path="/relatorios/financeiro/pagamento-duplicado" exact component={ReportsFinancialPaymentDuplicate} />
+      <Route path="/relatorios/financeiro/fluxo-caixa" exact component={ReportsFinancialFlowCashDesk} />
+      <Route path="/relatorios/financeiro/fluxo-diario" exact component={ReportsFinancialFlowDiary} />
+      <Route path="/relatorios/financeiro/pagamento-menor" exact component={ReportsFinancialPaymentToMinor} />
+      <Route path="/relatorios/financeiro/pagamento-menor-liberado" exact component={ReportsFinancialPaymentToMinorReleased} />
+      <Route path="/relatorios/financeiro/faturas-restauradas" exact component={ReportsFinancialRestoredInvoices} />
+      <Route path="/relatorios/financeiro/faturas-deletadas" exact component={ReportsFinancialDeletedInvoices} />
+      <Route path="/relatorios/financeiro/remessas-desfeitas" exact component={ReportsFinancialRemittancesDiscarded} />
+      <Route path="/relatorios/financeiro/pagamentos-desfeitas" exact component={ReportsFinancialPaymentsDowngrades} />
     </BrowserRouter>
   );
 }
