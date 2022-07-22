@@ -369,7 +369,7 @@ import { NetworkPPoESActiveSessions } from './pages/network/NetworkPPoESActiveSe
 import { NetworkPPoEInterfaces } from './pages/network/NetworkPPoEInterfaces'
 import { NetworkPPoEServices } from './pages/network/NetworkPPoEServices'
 
-/* <----------------------------------------------------NETWORK----------------------------------------------------------------------------> */
+/* <----------------------------------------------------RELATORIO----------------------------------------------------------------------------> */
 
 import { Reports } from './pages/relatorios/Reports'
 import { ReportsClientsNeighborhood } from './pages/relatorios/ReportsClientsNeighborhood'
@@ -408,9 +408,11 @@ import { ReportsFinancialPaymentToMinorReleased } from './pages/relatorios/Repor
 import { ReportsFinancialRestoredInvoices } from './pages/relatorios/ReportsFinancialRestoredInvoices'
 import { ReportsFinancialDeletedInvoices } from './pages/relatorios/ReportsFinancialDeletedInvoices'
 import { ReportsFinancialRemittancesDiscarded } from './pages/relatorios/ReportsFinancialRemittancesDiscarded'
+import { ReportsFinancialPaymentsDowngrades } from './pages/relatorios/ReportsFinancialPaymentsDowngrades'
+import { ReportsFinancialInvoicesOverdueReceive } from './pages/relatorios/ReportsFinancialInvoicesOverdueReceive'
 
 import './styles/global.scss'
-import { ReportsFinancialPaymentsDowngrades } from './pages/relatorios/ReportsFinancialPaymentsDowngrades'
+import { ReportsHelpDeskSummary } from './pages/relatorios/ReportsHelpDeskSummary'
 
 
 function App() {
@@ -837,7 +839,10 @@ function App() {
       <Route path="/relatorios/financeiro/faturas-restauradas" exact component={ReportsFinancialRestoredInvoices} />
       <Route path="/relatorios/financeiro/faturas-deletadas" exact component={ReportsFinancialDeletedInvoices} />
       <Route path="/relatorios/financeiro/remessas-desfeitas" exact component={ReportsFinancialRemittancesDiscarded} />
-      <Route path="/relatorios/financeiro/pagamentos-desfeitas" exact component={ReportsFinancialPaymentsDowngrades} />
+      <Route path="/relatorios/financeiro/pagamentos-desfeitos" exact component={ReportsFinancialPaymentsDowngrades} />
+      <Route path="/relatorios/financeiro/faturas-vencidas-receber" exact component={ReportsFinancialInvoicesOverdueReceive} />
+
+      <Route path="/relatorios/hrlp-desk/" exact component={ReportsHelpDeskSummary} />
     </BrowserRouter>
   );
 }
