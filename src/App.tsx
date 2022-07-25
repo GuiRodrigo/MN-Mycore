@@ -803,16 +803,16 @@ function App() {
 
       <Route path="/relatorios" exact component={Reports} />
 
-      <Route path="/relatorios/clientes/bairros" exact component={ReportsClientsNeighborhood} />
+      <Route path="/relatorios/clientes/bairro" exact component={ReportsClientsNeighborhood} />
       <Route path="/relatorios/clientes/cidade" exact component={ReportsClientsCity} />
       <Route path="/relatorios/clientes/tipo-pessoa" exact component={ReportsClientsTypePerson} />
       <Route path="/relatorios/clientes/status" exact component={ReportsClientsStatus} />
-      <Route path="/relatorios/clientes/aniversario" exact component={ReportsClientsBirthdays} />
+      <Route path="/relatorios/clientes/aniversariantes" exact component={ReportsClientsBirthdays} />
       <Route path="/relatorios/clientes/vencimento" exact component={ReportsCustomersExpiration} />
       <Route path="/relatorios/clientes/geolocalizacao" exact component={ReportsClientsGeolocation} />
       <Route path="/relatorios/clientes/crescimento" exact component={ReportsClientsGrowth} />
-      <Route path="/relatorios/clientes/status-alteracao" exact component={ReportsClientsStatusChanged} />
-      <Route path="/relatorios/clientes/abertos-recentemente" exact component={ReportsClientsOpenRecently} />
+      <Route path="/relatorios/clientes/status-alterado" exact component={ReportsClientsStatusChanged} />
+      <Route path="/relatorios/clientes/abertos-recentes" exact component={ReportsClientsOpenRecently} />
       <Route path="/relatorios/clientes/alteracao-login" exact component={ReportsClientsChangeLogin} />
       <Route path="/relatorios/clientes/clientes-cadastrados" exact component={ReportsClientsRegisteredClients} />
       <Route path="/relatorios/clientes/alteracao-mensalidade" exact component={ReportsClientsChangeMonthlyFee} />
@@ -842,7 +842,7 @@ function App() {
       <Route path="/relatorios/financeiro/pagamentos-desfeitos" exact component={ReportsFinancialPaymentsDowngrades} />
       <Route path="/relatorios/financeiro/faturas-vencidas-receber" exact component={ReportsFinancialInvoicesOverdueReceive} />
 
-      <Route path="/relatorios/hrlp-desk/" exact component={ReportsHelpDeskSummary} />
+      <Route path="/relatorios/help-desk/" exact component={ReportsHelpDeskSummary} />
     </BrowserRouter>
   );
 }

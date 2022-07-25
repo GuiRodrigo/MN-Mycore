@@ -40,7 +40,7 @@ export function ReportsBranch() {
                 </div>
 
                 {isFinancialReportsBranchOpen ?
-                    <ReportsHelpDeskBranch />
+                    <FinancialReportsBranch />
                     : null}
             </li>
 
@@ -52,7 +52,7 @@ export function ReportsBranch() {
                 </div>
 
                 {isReportsHelpDeskBranchOpen ?
-                    <FinancialReportsBranch />
+                    <ReportsHelpDeskBranch />
                     : null}
             </li>
 
